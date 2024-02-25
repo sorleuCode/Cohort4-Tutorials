@@ -86,14 +86,14 @@ let result = [];
 
 const printNums = () => {
     for (i = 1; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 !== 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        result.push("FIZZBUZZ");
+    }
+    else if (i % 3 === 0) {
         result.push("FIZZ");
     }
     else if (i % 5 === 0) {
         result.push("BUZZ");
-    }
-    else if (i % 3 === 0 && i % 5 === 0) {
-        result.push("FIZZBUZZ");
     }
     else {
         result.push(i);
